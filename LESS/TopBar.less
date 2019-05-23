@@ -1,0 +1,75 @@
+.top-bar {
+    z-index: 100;
+    .width-100();
+    .flex(center);
+    position: fixed;
+    height: 44px;
+    background-color: green;
+    .container {
+      .width-100();
+      .flex();
+      color: white;
+      letter-spacing: 1px;
+      padding: 0 10px;
+      @media(min-width: 1280px){
+        width: 1280px;
+      }
+        .container-left {
+        .flex(none, center);
+        flex: 1;
+        font-size: 11px;
+        a {
+          cursor: pointer;
+          &:last-child{
+            margin-right: 0;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+          margin-right: 25%;
+          font-weight: bold;
+          color: white;
+          text-decoration: none;
+        }
+      }
+      .container-center {
+        .flex(center, center);
+        flex: 3;
+        font-size: 9px;
+        a {
+          cursor: pointer;
+          margin-right: 5%;
+          &:last-child{
+            margin-right: 0;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+          color: white;
+          text-decoration: none;
+        }
+      }
+      .container-right {
+        
+        .flex(flex-end, center);
+        flex: 1;
+        font-size: 11px;
+        font-weight: bold;
+        
+        a {
+          cursor: pointer;
+          &:last-child{
+            margin-right: 0;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+          color: white;
+          text-decoration: none;
+        }
+      }
+  }
+}
+
+
+  
